@@ -49,7 +49,7 @@ const SmartScrollToTop = () => {
 
   return (
     <button
-      className={`fixed bottom-10 right-5 z-50 flex items-center justify-center h-10 w-10 rounded-full border-2 border-white/30 bg-black/50 backdrop-blur-sm shadow-xl transition-all duration-500 hover:bg-white/20 hover:border-white/50 hover:scale-110 hover:shadow-2xl ${
+      className={`fixed bottom-20 right-5 z-50 flex items-center justify-center h-10 w-10 rounded-full border-2 border-white/30 bg-black/50 backdrop-blur-sm shadow-xl transition-all duration-500 hover:bg-white/20 hover:border-white/50 hover:scale-110 hover:shadow-2xl ${
         isVisible
           ? "opacity-100 translate-y-0"
           : "opacity-0 translate-y-4 pointer-events-none"
