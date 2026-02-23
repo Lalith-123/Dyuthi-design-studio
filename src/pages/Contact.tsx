@@ -126,7 +126,7 @@ export const Contact: React.FC = () => {
         {/* Right: AI Assistant & Testimonials */}
         <div className="bg-neutral-900 text-white px-6 md:px-20 py-20 flex flex-col justify-between reveal delay-200 border-l border-neutral-800">
           {/* AI Feature */}
-          <div className="mb-20">
+          {/* <div className="mb-20">
             <div className="flex items-center gap-2 mb-6 text-white/90">
               <Sparkles className="w-5 h-5" />
               <h2 className="text-sm font-bold tracking-widest uppercase text-white">
@@ -170,7 +170,7 @@ export const Contact: React.FC = () => {
                 </p>
               </div>
             )}
-          </div>
+          </div> */}
 
           {/* Testimonials */}
           <div>
