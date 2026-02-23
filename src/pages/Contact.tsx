@@ -2,14 +2,14 @@ import React, { useState } from "react";
 // import { generateDesignConcept } from "../services/geminiService";
 import { Sparkles, Send, MapPin, Phone, Mail } from "lucide-react";
 
-const testimonials = [
-  {
-    id: 1,
-    text: "Dyuthi Design Studio translated our vision into a beautifully refined space. The attention to detail and quality of execution truly stood out.",
-    client: "Private Client",
-    project: "Residential",
-  },
-];
+// const testimonials = [
+//   {
+//     id: 1,
+//     text: "Dyuthi Design Studio translated our vision into a beautifully refined space. The attention to detail and quality of execution truly stood out.",
+//     client: "Private Client",
+//     project: "Residential",
+//   },
+// ];
 
 export const Contact: React.FC = () => {
   const [prompt, setPrompt] = useState("");
@@ -172,25 +172,25 @@ export const Contact: React.FC = () => {
             )}
           </div> */}
 
-          {/* Testimonials */}
-          <div>
-            <h2 className="text-xs font-bold tracking-widest uppercase mb-8 text-neutral-500">
-              What Clients Say
-            </h2>
-            <div className="space-y-8">
-              {testimonials.map((t) => (
-                <div key={t.id} className="group cursor-default">
-                  <p className="font-light text-2xl mb-6 text-neutral-200 leading-snug group-hover:text-white transition-colors">
-                    "{t.text}"
-                  </p>
-                  <div className="flex items-center gap-4">
-                    <div className="h-px w-8 bg-neutral-600 group-hover:w-12 transition-all"></div>
-                    <p className="text-xs uppercase tracking-widest text-neutral-400">
-                      {t.client}
-                    </p>
-                  </div>
-                </div>
-              ))}
+          {/* Google Map */}
+          <div className="flex-1 flex flex-col">
+            <div className="flex items-center gap-2 mb-6">
+              <MapPin size={16} className="text-neutral-500" />
+              <h2 className="text-xs font-bold tracking-widest uppercase text-neutral-500">
+                Find Us
+              </h2>
+            </div>
+            <div className="flex-1 min-h-[400px] overflow-hidden border border-neutral-800">
+              <iframe
+                title="Dyuthi Design Studio Location"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243646.9004924978!2d78.24323214179688!3d17.412281451219885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99daeaebd2c7%3A0xae93b78392bafbc2!2sHyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                width="100%"
+                height="100%"
+                style={{ border: 0, minHeight: "400px", filter: "invert(90%) hue-rotate(180deg)" }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
             </div>
           </div>
         </div>
