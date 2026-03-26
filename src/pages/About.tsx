@@ -1,4 +1,7 @@
 import React from "react";
+import neeharaImage from "../assets/neehara_dyuthi_dasari.jpeg";
+import saikumarImage from "../assets/sai_kumar.jpeg";
+import studioImage from "../assets/studio.jpeg";
 
 interface TeamMember {
   name: string;
@@ -11,16 +14,14 @@ const team: TeamMember[] = [
   {
     name: "Neehara Dyuthi Dasari",
     role: "Founder & Principal Architect",
-    image:
-      "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=1000&auto=format&fit=crop",
+    image: neeharaImage,
     description:
       "Leading the practice with a clear architectural vision. With a deep understanding of spatial planning, aesthetics, and buildability, she approaches every project as a carefully curated composition.",
   },
   {
     name: "Sai Kumar B",
-    role: "Co-Founder & Engineer",
-    image:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000&auto=format&fit=crop",
+    role: "Co-Founder & Chief Engineer",
+    image: saikumarImage,
     description:
       "Responsible for structural coordination and execution oversight. His expertise bridges design and construction, maintaining quality control and technical excellence.",
   },
@@ -59,7 +60,7 @@ export const About: React.FC = () => {
           </div>
           <div className="aspect-square bg-neutral-900 overflow-hidden reveal stagger-2 group">
             <img
-              src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1000&auto=format&fit=crop"
+              src={studioImage}
               alt="Studio Interior"
               className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 opacity-80 group-hover:opacity-100"
             />

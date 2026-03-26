@@ -100,10 +100,10 @@ export const Contact: React.FC = () => {
                 </h3>
               </div>
               <p className="font-light text-neutral-400 hover:text-white transition-colors cursor-pointer">
-                +91 [Your Number]
+                +91-8328491118, +91-7382377780
               </p>
               <p className="font-light text-neutral-400 hover:text-white transition-colors cursor-pointer">
-                hello@dyuthidesign.com
+                dyuthi.designstudio@gmail.com
               </p>
             </div>
             <div className="group">
@@ -114,10 +114,11 @@ export const Contact: React.FC = () => {
                 </h3>
               </div>
               <p className="font-light text-neutral-400">
-                [Your Office Address]
+                DYUTHI DESIGN STUDIO 87/1364-38-A Brundavan Nagar, Nandikotukur
+                road,
               </p>
               <p className="font-light text-neutral-400">
-                Hyderabad / Bangalore
+                Kurnool, Andhra pradesh -518002
               </p>
             </div>
           </div>
@@ -125,53 +126,6 @@ export const Contact: React.FC = () => {
 
         {/* Right: AI Assistant & Testimonials */}
         <div className="bg-neutral-900 text-white px-6 md:px-20 py-20 flex flex-col justify-between reveal delay-200 border-l border-neutral-800">
-          {/* AI Feature */}
-          {/* <div className="mb-20">
-            <div className="flex items-center gap-2 mb-6 text-white/90">
-              <Sparkles className="w-5 h-5" />
-              <h2 className="text-sm font-bold tracking-widest uppercase text-white">
-                AI Concept Generator
-              </h2>
-            </div>
-            <p className="text-sm text-neutral-400 mb-8 font-light leading-relaxed max-w-sm">
-              Not sure where to begin? Describe your ideal atmosphere, and let
-              our AI sketch a verbal concept for you.
-            </p>
-            <div className="relative mb-8 group">
-              <input
-                type="text"
-                value={prompt}
-                onChange={(e) => setPrompt(e.target.value)}
-                onKeyDown={(e) => e.key === "Enter" && handleGenerate()}
-                placeholder="E.g., A minimalist living room with warm wood and natural light..."
-                className="w-full bg-transparent border-b border-neutral-700 py-4 pr-12 outline-none focus:border-white transition-colors placeholder-neutral-600 text-white"
-              />
-              <button
-                onClick={handleGenerate}
-                disabled={loading}
-                className="absolute right-0 top-1/2 -translate-y-1/2 text-neutral-500 hover:text-white disabled:opacity-50 transition-colors"
-              >
-                <Send size={18} />
-              </button>
-            </div>
-
-            {loading && (
-              <div className="flex space-x-2 my-8">
-                <div className="h-1 w-1 bg-white rounded-full animate-bounce"></div>
-                <div className="h-1 w-1 bg-white rounded-full animate-bounce delay-100"></div>
-                <div className="h-1 w-1 bg-white rounded-full animate-bounce delay-200"></div>
-              </div>
-            )}
-
-            {concept && (
-              <div className="bg-white/5 p-8 border-l border-white/20 animate-fade-in backdrop-blur-sm">
-                <p className="font-serif italic text-lg leading-relaxed text-neutral-200">
-                  "{concept}"
-                </p>
-              </div>
-            )}
-          </div> */}
-
           {/* Google Map */}
           <div className="flex-1 flex flex-col">
             <div className="flex items-center gap-2 mb-6">
@@ -183,14 +137,18 @@ export const Contact: React.FC = () => {
             <div className="flex-1 min-h-[400px] overflow-hidden border border-neutral-800">
               <iframe
                 title="Dyuthi Design Studio Location"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243646.9004924978!2d78.24323214179688!3d17.412281451219885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99daeaebd2c7%3A0xae93b78392bafbc2!2sHyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3649.1699682414605!2d78.05665007489802!3d15.79726868484348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb5dd9953140c99%3A0x7f6c007d3dc7794f!2sDyuthi%20Design%20Studio!5e1!3m2!1sen!2sin!4v1774483184410!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
-                style={{ border: 0, minHeight: "400px", filter: "invert(90%) hue-rotate(180deg)" }}
+                style={{
+                  border: 0,
+                  minHeight: "400px",
+                  // filter: "invert(90%) hue-rotate(180deg)",
+                }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-              />
+              ></iframe>
             </div>
           </div>
         </div>
