@@ -1,16 +1,16 @@
 import React from "react";
 import { Project } from "../types";
-import Cafeteria from "../assets/Cafeteria/Cafeteria_2.jpeg";
-import Design from "../assets/Designs/Elevation.jpg";
-import Happy_Clients from "../assets/Happy_clients/Happy_clients_6.jpeg";
-import Kranthi_reddy_residence from "../assets/Kranthi_reddy_residence/IMG_2840.jpeg";
-import Krishna_residence from "../assets/Krishna_residence/IMG_9177.jpg";
-import Nandakam from "../assets/Nandakam/IMG_6008.jpg";
-import Renuka_nilayam from "../assets/Renuka_nilayam/IMG_0284.jpeg";
-import RR_mansion from "../assets/RR_mansion/IMG_4606.jpeg";
-import Sri_devi_residence from "../assets/Sri_devi_residence/IMG_1963.jpg";
-import Sri_sunitha_nilayam from "../assets/Sri_sunitha_nilayam/IMG_8648.jpg";
-import Sudha_nilayam from "../assets/Sudha_nilayam/IMG_9022.jpeg";
+import Cafeteria from "../assets/Cafeteria/Cafeteria_2.webp";
+import Design from "../assets/Designs/Elevation.webp";
+import Happy_Clients from "../assets/Happy_clients/Happy_clients_6.webp";
+import Kranthi_reddy_residence from "../assets/Kranthi_reddy_residence/IMG_2840.webp";
+import Krishna_residence from "../assets/Krishna_residence/IMG_9177.webp";
+import Nandakam from "../assets/Nandakam/IMG_6008.webp";
+import Renuka_nilayam from "../assets/Renuka_nilayam/IMG_0284.webp";
+import RR_mansion from "../assets/RR_mansion/IMG_4606.webp";
+import Sri_devi_residence from "../assets/Sri_devi_residence/IMG_1963.webp";
+import Sri_sunitha_nilayam from "../assets/Sri_sunitha_nilayam/IMG_8648.webp";
+import Sudha_nilayam from "../assets/Sudha_nilayam/IMG_9022.webp";
 import { useNavigate } from "react-router-dom";
 
 const projects: Project[] = [
