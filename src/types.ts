@@ -4,6 +4,7 @@ export interface Project {
   category: string;
   image: string;
   year: string;
+  name: string;
 }
 
 export interface Service {
