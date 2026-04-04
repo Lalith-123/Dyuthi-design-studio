@@ -6,46 +6,53 @@ import { Link } from "react-router-dom";
 const testimonials = [
   {
     id: 1,
-    text: "Dyuthi Design Studio transformed our vision into a breathtaking reality. Their attention to detail is unmatched.",
-    author: "Sarah Jenkins",
-    role: "CEO, TechFlow",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=faces"
+    // text: "Dyuthi Design Studio transformed our vision into a breathtaking reality. Their attention to detail is unmatched.",
+    text: "So greatful to my interior designers for bringing my vision to life🤍. Every single corner of my room feels throughtfully designed and truly me. From the vanity mirror I love, the butterfly handles (my favourite 🦋), to the perfect place for my artworks, trophies, and memories.<br/><br/>The colour combinations, spacious wardrode, and throughtful use of space make the room feel calm and composed. Even though I usually don't choose pink, the pink-and-white theme turned out beautiful and soothing. The cozy sit-out area and bay window make it my happy place.<br/><br/>Absolutely in love with my room🤍✨",
+    author: "<Name Needed>",
+    role: "<Role Needed>",
+    image:
+      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=faces",
   },
   {
     id: 2,
-    text: "A seamless blend of functionality and aesthetics. Living in a space designed by them is a daily joy.",
-    author: "Michael Chen",
-    role: "Architect",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=faces"
+    text: "Working with Dyuthi Design Studio was a wonderful experience. From start to finish, the entire process was smooth, professional, and stress free.<br/><br/>The team truly understood our vision and transformed it into a beautiful space. Every detail, form design elements to color choices, was throughtfully planned and perfectly executed. I couldn't have achieved this without them.",
+    author: "Pratima Brahma Reddy",
+    role: "<Role Needed>",
+    image:
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=faces",
   },
   {
     id: 3,
-    text: "Professional, creative, and incredibly talented. They understood our brand essence perfectly.",
-    author: "Elena Rodriguez",
-    role: "Director, ArtSpace",
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&h=150&fit=crop&crop=faces"
+    text: "Thank you for wonderful design for my house... I can't recommend Dyuthi studios enough for their increadible interior work! They completely transformed our outdated living space into a modern, functional dream home. From custom cabinetry that maximizes every inch to flawless lighting and color schemes that perfectly match our vibe, every detail was spot-on.<br/><br/>The team was professional, timely, and listened to our ideas while suggesting brilliant upgrades we hadn't considered. Our home feels luxurious yet cozy, and we've gotten endless compliments from guests. Worth every penny-five stars all the way!",
+    author: "Kranthi Kumar Reddy",
+    role: "<Role Needed>",
+    image:
+      "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&h=150&fit=crop&crop=faces",
   },
   {
     id: 4,
     text: "The team's ability to work with natural light and materials created a sanctuary we never want to leave.",
     author: "David Wright",
     role: "Homeowner",
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=faces"
+    image:
+      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=faces",
   },
   {
     id: 5,
     text: "Exceptional service from concept to execution. They pushed boundaries while respecting our budget.",
     author: "Priya Patel",
     role: "Founder, Zenith",
-    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&h=150&fit=crop&crop=faces"
+    image:
+      "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&h=150&fit=crop&crop=faces",
   },
   {
     id: 6,
     text: "Their minimalist approach brought a sense of calm and clarity to our chaotic office environment.",
     author: "James Wilson",
     role: "CTO, Nexus",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=faces"
-  }
+    image:
+      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=faces",
+  },
 ];
 
 interface TestimonialItem {
@@ -60,12 +67,19 @@ const TestimonialCard: React.FC<{ item: TestimonialItem }> = ({ item }) => (
   <div className="w-[350px] md:w-[450px] bg-neutral-900 border border-neutral-800 p-8 mx-4 shrink-0 hover:border-neutral-600 transition-colors duration-300 group/card">
     <Quote className="w-8 h-8 text-neutral-600 mb-6 group-hover/card:text-white transition-colors" />
     <p className="text-neutral-300 text-lg font-light leading-relaxed mb-8">
-      "{item.text}"
+      "
+      {item.text.split("<br/>").map((line, i, arr) => (
+        <React.Fragment key={i}>
+          {line}
+          {i < arr.length - 1 && <br />}
+        </React.Fragment>
+      ))}
+      "
     </p>
     <div className="flex items-center gap-4">
-      <img 
-        src={item.image} 
-        alt={item.author} 
+      <img
+        src={item.image}
+        alt={item.author}
         className="w-12 h-12 rounded-full object-cover grayscale group-hover/card:grayscale-0 transition-all"
       />
       <div>
@@ -200,7 +214,9 @@ export const Home: React.FC = () => {
       {/* Testimonials Section */}
       <section className="py-24 bg-black overflow-hidden">
         <div className="px-6 md:px-20 mb-16 reveal">
-          <h2 className="text-4xl md:text-5xl font-serif text-white mb-6">What Our Customers Say</h2>
+          <h2 className="text-4xl md:text-5xl font-serif text-white mb-6">
+            What Our Customers Say
+          </h2>
           <div className="h-px w-24 bg-white/30"></div>
         </div>
 
@@ -208,19 +224,21 @@ export const Home: React.FC = () => {
         <div className="relative w-full">
           {/* Left Fade Gradient */}
           <div className="absolute left-0 top-0 bottom-0 w-24 md:w-48 z-10 bg-gradient-to-r from-black to-transparent pointer-events-none"></div>
-          
+
           {/* Right Fade Gradient */}
           <div className="absolute right-0 top-0 bottom-0 w-24 md:w-48 z-10 bg-gradient-to-l from-black to-transparent pointer-events-none"></div>
 
           {/* Top Row - Moves Right (Reverse Marquee) */}
-          <div 
+          <div
             className="flex mb-8 relative z-20"
             onMouseEnter={() => setIsTopRowHovered(true)}
             onMouseLeave={() => setIsTopRowHovered(false)}
           >
-            <div 
+            <div
               className="flex animate-marquee-reverse"
-              style={{ animationPlayState: isTopRowHovered ? 'paused' : 'running' }}
+              style={{
+                animationPlayState: isTopRowHovered ? "paused" : "running",
+              }}
             >
               {testimonials.map((item) => (
                 <TestimonialCard key={`row1-1-${item.id}`} item={item} />
@@ -229,10 +247,12 @@ export const Home: React.FC = () => {
                 <TestimonialCard key={`row1-2-${item.id}`} item={item} />
               ))}
             </div>
-            <div 
-              className="flex animate-marquee-reverse" 
+            <div
+              className="flex animate-marquee-reverse"
               aria-hidden="true"
-              style={{ animationPlayState: isTopRowHovered ? 'paused' : 'running' }}
+              style={{
+                animationPlayState: isTopRowHovered ? "paused" : "running",
+              }}
             >
               {testimonials.map((item) => (
                 <TestimonialCard key={`row1-3-${item.id}`} item={item} />
@@ -244,14 +264,16 @@ export const Home: React.FC = () => {
           </div>
 
           {/* Bottom Row - Moves Left (Standard Marquee) */}
-          <div 
+          <div
             className="flex relative z-20"
             onMouseEnter={() => setIsBottomRowHovered(true)}
             onMouseLeave={() => setIsBottomRowHovered(false)}
           >
-            <div 
+            <div
               className="flex animate-marquee"
-              style={{ animationPlayState: isBottomRowHovered ? 'paused' : 'running' }}
+              style={{
+                animationPlayState: isBottomRowHovered ? "paused" : "running",
+              }}
             >
               {testimonials.map((item) => (
                 <TestimonialCard key={`row2-1-${item.id}`} item={item} />
@@ -260,10 +282,12 @@ export const Home: React.FC = () => {
                 <TestimonialCard key={`row2-2-${item.id}`} item={item} />
               ))}
             </div>
-            <div 
-              className="flex animate-marquee" 
+            <div
+              className="flex animate-marquee"
               aria-hidden="true"
-              style={{ animationPlayState: isBottomRowHovered ? 'paused' : 'running' }}
+              style={{
+                animationPlayState: isBottomRowHovered ? "paused" : "running",
+              }}
             >
               {testimonials.map((item) => (
                 <TestimonialCard key={`row2-3-${item.id}`} item={item} />
