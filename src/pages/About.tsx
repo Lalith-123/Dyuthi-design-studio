@@ -2,6 +2,9 @@ import React from "react";
 import neeharaImage from "../assets/neehara_dyuthi_dasari.jpeg";
 import saikumarImage from "../assets/sai_kumar.jpeg";
 import studioImage from "../assets/studio.jpeg";
+import ravindrababu from "../assets/Ravindra_Babu_Dasari.jpg";
+import padmakalva from "../assets/Padma_kalva.jpg";
+import muralikrishna from "../assets/Murali_krishna.jpg";
 
 interface TeamMember {
   name: string;
@@ -24,6 +27,27 @@ const team: TeamMember[] = [
     image: saikumarImage,
     description:
       "Responsible for structural coordination and execution oversight. His expertise bridges design and construction, maintaining quality control and technical excellence.",
+  },
+  {
+    name: "Mr Ravindra Babu Dasari",
+    role: "HR Team",
+    image: ravindrababu,
+    description:
+      "The backbone of our HR team and a proud father who supports his daughter at every step, while seamlessly balancing and guiding the entire Dyuthi Design Team.",
+  },
+  {
+    name: "Mrs Padma Kalva",
+    role: "Arts Team",
+    image: padmakalva,
+    description:
+      "M.A., B.Ed., Diploma in Fashion Design, Diploma in Handicrafts After 40 years of unwavering dedication, wisdom, and selfless service in shaping young minds as a teacher, she now gracefully steps into a beautiful new chapter of life… Beginning a creative journey with Dyuthi Design Studio as a part of our Arts Team — where experience meets passion, and tradition beautifully blends with creativity.",
+  },
+  {
+    name: "Murali krishna",
+    role: "Artist",
+    image: muralikrishna,
+    description:
+      "Murali krishna is a highly talented artist known for his exceptional creative vision and keen attention to detail. His contributions have elevated our projects, adding uniqueness, elegance, and strong visual appeal.",
   },
 ];
 

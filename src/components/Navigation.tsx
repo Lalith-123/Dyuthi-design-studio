@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import { Menu, X, Instagram, MessageCircle } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 
 const navItems = [
   { label: "Home", path: "/" },
@@ -68,18 +69,18 @@ export const Navigation: React.FC = () => {
             {/* Desktop Socials */}
             <div className="hidden md:flex items-center space-x-6">
               <a
-                href="#"
+                href="https://www.instagram.com/dyuthi_designstudio?igsh=NDBwdTk4cGpqNWpt&utm_source=qr"
                 className="text-white hover:text-neutral-400 transition-colors duration-300"
                 aria-label="Instagram"
               >
                 <Instagram size={20} strokeWidth={1.5} />
               </a>
               <a
-                href="#"
+                href="https://wa.me/8328491118"
                 className="text-white hover:text-neutral-400 transition-colors duration-300"
                 aria-label="WhatsApp"
               >
-                <MessageCircle size={20} strokeWidth={1.5} />
+                <FaWhatsapp size={20} />
               </a>
             </div>
 
@@ -114,16 +115,16 @@ export const Navigation: React.FC = () => {
           style={{ animationDelay: "300ms" }}
         >
           <a
-            href="#"
+            href="https://www.instagram.com/dyuthi_designstudio?igsh=NDBwdTk4cGpqNWpt&utm_source=qr"
             className="text-neutral-500 hover:text-white transition-colors"
           >
             <Instagram size={24} />
           </a>
           <a
-            href="#"
+            href="https://wa.me/8328491118"
             className="text-neutral-500 hover:text-white transition-colors"
           >
-            <MessageCircle size={24} />
+            <FaWhatsapp size={24} />
           </a>
         </div>
       </div>

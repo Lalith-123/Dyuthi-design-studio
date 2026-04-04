@@ -85,13 +85,10 @@ const App: React.FC = () => {
           <div className="flex flex-col md:flex-row justify-between items-center text-xs text-neutral-500 uppercase tracking-widest">
             <p>&copy; {new Date().getFullYear()} DYUTHI DESIGN STUDIO.</p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <a href="#" className="hover:text-white transition-colors">
+              <a href="https://www.instagram.com/dyuthi_designstudio?igsh=NDBwdTk4cGpqNWpt&utm_source=qr" className="hover:text-white transition-colors">
                 Instagram
               </a>
-              <a href="#" className="hover:text-white transition-colors">
-                LinkedIn
-              </a>
-              <a href="#" className="hover:text-white transition-colors">
+              <a href="https://wa.me/8328491118" className="hover:text-white transition-colors">
                 WhatsApp
               </a>
             </div>
