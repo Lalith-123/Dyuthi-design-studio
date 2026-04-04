@@ -51,7 +51,6 @@ import Nandakam_5 from "../assets/Nandakam/IMG_5539.webp";
 import Nandakam_6 from "../assets/Nandakam/IMG_5809.webp";
 import Nandakam_7 from "../assets/Nandakam/IMG_5829.webp";
 import Nandakam_8 from "../assets/Nandakam/IMG_5834.webp";
-import Nandakam_9 from "../assets/Nandakam/IMG_5854.webp";
 import Nandakam_10 from "../assets/Nandakam/IMG_5860.webp";
 import Nandakam_11 from "../assets/Nandakam/IMG_5875.webp";
 import Nandakam_12 from "../assets/Nandakam/IMG_6126.webp";
@@ -223,7 +222,6 @@ export const images = {
     Nandakam_6,
     Nandakam_7,
     Nandakam_8,
-    Nandakam_9,
     Nandakam_10,
     Nandakam_11,
     Nandakam_12,

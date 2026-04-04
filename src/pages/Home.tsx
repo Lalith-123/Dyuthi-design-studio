@@ -2,7 +2,7 @@ import React from "react";
 import { ArrowRight, Quote } from "lucide-react";
 import { Link } from "react-router-dom";
 import Design from "../assets/Designs/Elevation.webp";
-import Nandakam from "../assets/Nandakam/IMG_6008.webp";
+import Nandakam from "../assets/Nandakam/IMG_4756.webp";
 import { useNavigate } from "react-router-dom";
 
 // Testimonial Data
@@ -11,15 +11,15 @@ const testimonials = [
     id: 1,
     // text: "Dyuthi Design Studio transformed our vision into a breathtaking reality. Their attention to detail is unmatched.",
     text: "So greatful to my interior designers for bringing my vision to life🤍. Every single corner of my room feels throughtfully designed and truly me. From the vanity mirror I love, the butterfly handles (my favourite 🦋), to the perfect place for my artworks, trophies, and memories.<br/><br/>The colour combinations, spacious wardrode, and throughtful use of space make the room feel calm and composed. Even though I usually don't choose pink, the pink-and-white theme turned out beautiful and soothing. The cozy sit-out area and bay window make it my happy place.<br/><br/>Absolutely in love with my room🤍✨",
-    author: "<Name Needed>",
-    role: "<Role Needed>",
+    author: "Mrs Sunitha",
+    role: "Mrs Sunitha",
     image:
       "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=faces",
   },
   {
     id: 2,
     text: "Working with Dyuthi Design Studio was a wonderful experience. From start to finish, the entire process was smooth, professional, and stress free.<br/><br/>The team truly understood our vision and transformed it into a beautiful space. Every detail, form design elements to color choices, was throughtfully planned and perfectly executed. I couldn't have achieved this without them.",
-    author: "Pratima Brahma Reddy",
+    author: "Brahma Reddy",
     role: "<Role Needed>",
     image:
       "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=faces",
@@ -80,14 +80,14 @@ const TestimonialCard: React.FC<{ item: TestimonialItem }> = ({ item }) => (
       "
     </p>
     <div className="flex items-center gap-4">
-      <img
+      {/* <img
         src={item.image}
         alt={item.author}
         className="w-12 h-12 rounded-full object-cover grayscale group-hover/card:grayscale-0 transition-all"
-      />
+      /> */}
       <div>
-        <h4 className="text-white font-medium">{item.author}</h4>
-        <p className="text-neutral-500 text-sm">{item.role}</p>
+        <h4 className="text-white font-medium">~ {item.author}</h4>
+        {/* <p className="text-neutral-500 text-sm">{item.role}</p> */}
       </div>
     </div>
   </div>
@@ -189,12 +189,12 @@ export const Home: React.FC = () => {
                 Explore
               </span>
             </div>
-            <p className="text-neutral-500 text-xs uppercase tracking-widest mt-2">
+            {/* <p className="text-neutral-500 text-xs uppercase tracking-widest mt-2">
               Location Needed
-            </p>
+            </p> */}
           </div>
 
-          <div className="group cursor-pointer md:mt-32 reveal stagger-2" onClick={() => openGallery("Nandakam")}>
+          <div className="group cursor-pointer md:mt-32 reveal stagger-2" onClick={() => openGallery("Nandakam-")}>
             <div className="overflow-hidden mb-6 aspect-[4/5] relative bg-neutral-900">
               <div className="absolute inset-0 bg-black/20 z-10 group-hover:bg-transparent transition-colors"></div>
               <img
@@ -211,9 +211,9 @@ export const Home: React.FC = () => {
                 Explore
               </span>
             </div>
-            <p className="text-neutral-500 text-xs uppercase tracking-widest mt-2">
+            {/* <p className="text-neutral-500 text-xs uppercase tracking-widest mt-2">
               Location Needed
-            </p>
+            </p> */}
           </div>
         </div>
       </section>
@@ -271,7 +271,7 @@ export const Home: React.FC = () => {
           </div>
 
           {/* Bottom Row - Moves Left (Standard Marquee) */}
-          <div
+          {/* <div
             className="flex relative z-20"
             onMouseEnter={() => setIsBottomRowHovered(true)}
             onMouseLeave={() => setIsBottomRowHovered(false)}
@@ -303,7 +303,7 @@ export const Home: React.FC = () => {
                 <TestimonialCard key={`row2-4-${item.id}`} item={item} />
               ))}
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 

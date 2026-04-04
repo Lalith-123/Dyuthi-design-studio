@@ -88,7 +88,7 @@ const App: React.FC = () => {
               <a href="https://www.instagram.com/dyuthi_designstudio?igsh=NDBwdTk4cGpqNWpt&utm_source=qr" className="hover:text-white transition-colors">
                 Instagram
               </a>
-              <a href="https://wa.me/8328491118" className="hover:text-white transition-colors">
+              <a href="https://wa.me/+918328491118" className="hover:text-white transition-colors">
                 WhatsApp
               </a>
             </div>

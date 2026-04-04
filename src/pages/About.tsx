@@ -5,6 +5,7 @@ import studioImage from "../assets/studio.jpeg";
 import ravindrababu from "../assets/Ravindra_Babu_Dasari.jpg";
 import padmakalva from "../assets/Padma_kalva.jpg";
 import muralikrishna from "../assets/Murali_krishna.jpg";
+import lokesh from "../assets/Lokesh.jpeg";
 
 interface TeamMember {
   name: string;
@@ -48,6 +49,13 @@ const team: TeamMember[] = [
     image: muralikrishna,
     description:
       "Murali krishna is a highly talented artist known for his exceptional creative vision and keen attention to detail. His contributions have elevated our projects, adding uniqueness, elegance, and strong visual appeal.",
+  },
+  {
+    name: "Lokesh",
+    role: "Site Team",
+    image: lokesh,
+    description:
+      "Lokesh is a strong pillar of our team, consistently supervising sites with great dedication and responsibility. His commitment ensures that every project runs smoothly and meets our standards.",
   },
 ];
 

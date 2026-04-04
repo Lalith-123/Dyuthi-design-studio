@@ -76,7 +76,7 @@ export const Navigation: React.FC = () => {
                 <Instagram size={20} strokeWidth={1.5} />
               </a>
               <a
-                href="https://wa.me/8328491118"
+                href="https://wa.me/+918328491118"
                 className="text-white hover:text-neutral-400 transition-colors duration-300"
                 aria-label="WhatsApp"
               >
@@ -121,7 +121,7 @@ export const Navigation: React.FC = () => {
             <Instagram size={24} />
           </a>
           <a
-            href="https://wa.me/8328491118"
+            href="https://wa.me/+918328491118"
             className="text-neutral-500 hover:text-white transition-colors"
           >
             <FaWhatsapp size={24} />

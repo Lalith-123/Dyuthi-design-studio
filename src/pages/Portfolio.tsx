@@ -5,7 +5,7 @@ import Design from "../assets/Designs/Elevation.webp";
 import Happy_Clients from "../assets/Happy_clients/Happy_clients_6.webp";
 import Kranthi_reddy_residence from "../assets/Kranthi_reddy_residence/IMG_2840.webp";
 import Krishna_residence from "../assets/Krishna_residence/IMG_9177.webp";
-import Nandakam from "../assets/Nandakam/IMG_6008.webp";
+import Nandakam from "../assets/Nandakam/IMG_4756.webp";
 import Renuka_nilayam from "../assets/Renuka_nilayam/IMG_0284.webp";
 import RR_mansion from "../assets/RR_mansion/IMG_4606.webp";
 import Sri_devi_residence from "../assets/Sri_devi_residence/IMG_1963.webp";
@@ -17,7 +17,7 @@ const projects: Project[] = [
   {
     id: 1,
     title: "Cafeteria",
-    category: "Residential",
+    category: "Commercial",
     year: "2023",
     image: Cafeteria,
     name: "Cafeteria",
@@ -25,7 +25,7 @@ const projects: Project[] = [
   {
     id: 2,
     title: "Designs",
-    category: "Commercial",
+    category: "Residential",
     year: "2023",
     image: Design,
     name: "Design",
@@ -33,7 +33,7 @@ const projects: Project[] = [
   {
     id: 3,
     title: "Happy clients",
-    category: "Cultural",
+    category: "Residential",
     year: "2022",
     image: Happy_Clients,
     name: "Happy_clients",
@@ -41,7 +41,7 @@ const projects: Project[] = [
   {
     id: 4,
     title: "Kranthi Reddy Residence",
-    category: "Public",
+    category: "Residential",
     year: "2022",
     image: Kranthi_reddy_residence,
     name: "Kranthi_reddy_residence",
@@ -57,7 +57,7 @@ const projects: Project[] = [
   {
     id: 6,
     title: "Nandakam",
-    category: "Cultural",
+    category: "Residential",
     year: "2021",
     image: Nandakam,
     name: "Nandakam",
@@ -73,7 +73,7 @@ const projects: Project[] = [
   {
     id: 8,
     title: "R R Mansion",
-    category: "Commercial",
+    category: "Residential",
     year: "2023",
     image: RR_mansion,
     name: "RR_mansion",
@@ -81,7 +81,7 @@ const projects: Project[] = [
   {
     id: 9,
     title: "Sri Devi Residence",
-    category: "Cultural",
+    category: "Residential",
     year: "2022",
     image: Sri_devi_residence,
     name: "Sri_devi_residence",
@@ -89,7 +89,7 @@ const projects: Project[] = [
   {
     id: 10,
     title: "Sri Sunitha Nilayam",
-    category: "Public",
+    category: "Residential",
     year: "2022",
     image: Sri_sunitha_nilayam,
     name: "Sri_sunitha_nilayam",
@@ -146,7 +146,7 @@ export const Portfolio: React.FC = () => {
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-auto object-cover transition-all duration-700 group-hover:scale-105"
+                className="w-full h-auto object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100"
               />
             </div>
             <div className="flex justify-between items-baseline border-b border-neutral-800 pb-2 group-hover:border-white transition-colors duration-500">
