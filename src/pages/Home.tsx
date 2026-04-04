@@ -1,6 +1,9 @@
 import React from "react";
 import { ArrowRight, Quote } from "lucide-react";
 import { Link } from "react-router-dom";
+import Design from "../assets/Designs/Elevation.webp";
+import Nandakam from "../assets/Nandakam/IMG_6008.webp";
+import { useNavigate } from "react-router-dom";
 
 // Testimonial Data
 const testimonials = [
@@ -93,6 +96,10 @@ const TestimonialCard: React.FC<{ item: TestimonialItem }> = ({ item }) => (
 export const Home: React.FC = () => {
   const [isTopRowHovered, setIsTopRowHovered] = React.useState(false);
   const [isBottomRowHovered, setIsBottomRowHovered] = React.useState(false);
+  const navigate = useNavigate();
+  const openGallery = (name: string) => {
+    navigate(`/gallery/${name}`);
+  };
 
   const marqueeContent = (
     <>
@@ -165,47 +172,47 @@ export const Home: React.FC = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          <div className="group cursor-pointer reveal stagger-1">
+          <div className="group cursor-pointer reveal stagger-1" onClick={() => openGallery("Design")}>
             <div className="overflow-hidden mb-6 aspect-[4/5] relative bg-neutral-900">
               <div className="absolute inset-0 bg-black/20 z-10 group-hover:bg-transparent transition-colors"></div>
               <img
-                src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1000&auto=format&fit=crop"
+                src={Design}
                 className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ease-out opacity-80 group-hover:opacity-100"
                 alt="Project 1"
               />
             </div>
             <div className="flex justify-between items-center border-b border-neutral-800 pb-4 group-hover:border-white transition-colors">
               <h3 className="text-2xl font-light group-hover:pl-4 transition-all duration-300">
-                The Stone Residence
+                Designs
               </h3>
               <span className="text-xs uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 Explore
               </span>
             </div>
             <p className="text-neutral-500 text-xs uppercase tracking-widest mt-2">
-              Hyderabad, India
+              Location Needed
             </p>
           </div>
 
-          <div className="group cursor-pointer md:mt-32 reveal stagger-2">
+          <div className="group cursor-pointer md:mt-32 reveal stagger-2" onClick={() => openGallery("Nandakam")}>
             <div className="overflow-hidden mb-6 aspect-[4/5] relative bg-neutral-900">
               <div className="absolute inset-0 bg-black/20 z-10 group-hover:bg-transparent transition-colors"></div>
               <img
-                src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1000&auto=format&fit=crop"
+                src={Nandakam}
                 className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ease-out opacity-80 group-hover:opacity-100"
                 alt="Project 2"
               />
             </div>
             <div className="flex justify-between items-center border-b border-neutral-800 pb-4 group-hover:border-white transition-colors">
               <h3 className="text-2xl font-light group-hover:pl-4 transition-all duration-300">
-                Urban Loft
+                Nandakam
               </h3>
               <span className="text-xs uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 Explore
               </span>
             </div>
             <p className="text-neutral-500 text-xs uppercase tracking-widest mt-2">
-              Bangalore, India
+              Location Needed
             </p>
           </div>
         </div>
