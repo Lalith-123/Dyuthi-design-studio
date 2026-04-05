@@ -67,7 +67,7 @@ import Renuka_nilayam_8 from "../assets/Renuka_nilayam/IMG_0267.webp";
 import Renuka_nilayam_9 from "../assets/Renuka_nilayam/IMG_0274.webp";
 import Renuka_nilayam_10 from "../assets/Renuka_nilayam/IMG_0280.webp";
 import Renuka_nilayam_11 from "../assets/Renuka_nilayam/IMG_0284.webp";
-import RR_mansion_1 from "../assets/RR_mansion/IMG_1444.webp";
+// import RR_mansion_1 from "../assets/RR_mansion/IMG_1444.webp";
 import RR_mansion_2 from "../assets/RR_mansion/IMG_4426.webp";
 import RR_mansion_3 from "../assets/RR_mansion/IMG_4432.webp";
 import RR_mansion_4 from "../assets/RR_mansion/IMG_4446.webp";
@@ -105,7 +105,7 @@ import RR_mansion_35 from "../assets/RR_mansion/IMG_6327.webp";
 import RR_mansion_36 from "../assets/RR_mansion/IMG_6330.webp";
 import RR_mansion_37 from "../assets/RR_mansion/IMG_6332.webp";
 import RR_mansion_38 from "../assets/RR_mansion/IMG_6348.webp";
-import RR_mansion_39 from "../assets/RR_mansion/RR_mansion_1.webp";
+// import RR_mansion_39 from "../assets/RR_mansion/RR_mansion_1.webp";
 // import RR_mansion_40 from "../assets/RR_mansion/RR_mansion_2.mp4"
 import Sri_devi_residence_1 from "../assets/Sri_devi_residence/IMG_1963.webp";
 import Sri_devi_residence_2 from "../assets/Sri_devi_residence/IMG_1999.webp";
@@ -242,7 +242,7 @@ export const images = {
     Renuka_nilayam_11,
   ],
   RR_mansion: [
-    RR_mansion_1,
+    // RR_mansion_1,
     RR_mansion_2,
     RR_mansion_3,
     RR_mansion_4,
@@ -280,7 +280,7 @@ export const images = {
     RR_mansion_36,
     RR_mansion_37,
     RR_mansion_38,
-    RR_mansion_39,
+    // RR_mansion_39,
   ],
   Sri_devi_residence: [
     Sri_devi_residence_1,
