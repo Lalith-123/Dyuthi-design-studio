@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { X, ChevronLeft, ChevronRight, Maximize2 } from "lucide-react";
 import { useParams, useNavigate } from "react-router-dom";
-import { images } from "./images";
+import { images } from "./Images";
 
 export interface GalleryImage {
   id: string | number;
