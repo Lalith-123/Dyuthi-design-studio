@@ -12,5 +12,8 @@ export default defineConfig({
     }),
     tailwindcss(),
   ],
-  base: "/Dyuthi-design-studio/",
+  build: {
+    outDir: "dist", // Netlify will use this folder
+  },
+  base: process.env.GITHUB_PAGES === "true" ? "/Dyuthi-design-studio/" : "/",
 });
