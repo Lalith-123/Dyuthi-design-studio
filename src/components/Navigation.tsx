@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import { Menu, X, Instagram, MessageCircle } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
+import logo from "../assets/logo.png";
 
 const navItems = [
   { label: "Home", path: "/" },
@@ -57,10 +58,11 @@ export const Navigation: React.FC = () => {
               to="/"
               className="text-2xl font-bold tracking-tighter uppercase font-sans z-50 text-white group relative"
             >
-              DYUTHI
+              {/* DYUTHI
               <span className="text-neutral-500 group-hover:text-white transition-colors">
                 .
-              </span>
+              </span> */}
+              <img src={logo} className="w-25"/>
             </NavLink>
           </div>
 

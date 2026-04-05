@@ -32,30 +32,30 @@ const testimonials = [
     image:
       "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&h=150&fit=crop&crop=faces",
   },
-  {
-    id: 4,
-    text: "The team's ability to work with natural light and materials created a sanctuary we never want to leave.",
-    author: "David Wright",
-    role: "Homeowner",
-    image:
-      "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=faces",
-  },
-  {
-    id: 5,
-    text: "Exceptional service from concept to execution. They pushed boundaries while respecting our budget.",
-    author: "Priya Patel",
-    role: "Founder, Zenith",
-    image:
-      "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&h=150&fit=crop&crop=faces",
-  },
-  {
-    id: 6,
-    text: "Their minimalist approach brought a sense of calm and clarity to our chaotic office environment.",
-    author: "James Wilson",
-    role: "CTO, Nexus",
-    image:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=faces",
-  },
+  // {
+  //   id: 4,
+  //   text: "The team's ability to work with natural light and materials created a sanctuary we never want to leave.",
+  //   author: "David Wright",
+  //   role: "Homeowner",
+  //   image:
+  //     "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=faces",
+  // },
+  // {
+  //   id: 5,
+  //   text: "Exceptional service from concept to execution. They pushed boundaries while respecting our budget.",
+  //   author: "Priya Patel",
+  //   role: "Founder, Zenith",
+  //   image:
+  //     "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&h=150&fit=crop&crop=faces",
+  // },
+  // {
+  //   id: 6,
+  //   text: "Their minimalist approach brought a sense of calm and clarity to our chaotic office environment.",
+  //   author: "James Wilson",
+  //   role: "CTO, Nexus",
+  //   image:
+  //     "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=faces",
+  // },
 ];
 
 interface TestimonialItem {
