@@ -20,14 +20,14 @@ const team: TeamMember[] = [
     role: "Founder & Principal Architect",
     image: neeharaImage,
     description:
-      "Leading the practice with a clear architectural vision. With a deep understanding of spatial planning, aesthetics, and buildability, she approaches every project as a carefully curated composition.",
+      "Neehara Dyuthi Dasari is the Founder and Principal Architect of Dyuthi Design Studio, leading the practice with a clear architectural vision and a strong commitment to refined, functional design. With a deep understanding of spatial planning, aesthetics, and buildability, she approaches every project as a carefully curated composition.<br><br>Her design philosophy centers on balance—where form, function, light, and material come together seamlessly. From concept development to detailed execution, she ensures that each space reflects individuality, purpose, and enduring design value.",
   },
   {
     name: "Sai Kumar B",
     role: "Co-Founder & Chief Engineer",
     image: saikumarImage,
     description:
-      "Responsible for structural coordination and execution oversight. His expertise bridges design and construction, maintaining quality control and technical excellence.",
+      "Sai Kumar B is the Co-Founder and Civil Engineer at Dyuthi Design Studio, responsible for structural coordination, technical planning, and execution oversight. With a strong focus on precision and practicality, he ensures that every design vision is translated into a structurally sound and efficiently executed reality.<br><br>His expertise BOQ and construction, maintaining quality control, site coordination, and technical excellence throughout all stages of the project lifecycle.",
   },
   {
     name: "Mr Ravindra Babu Dasari",
@@ -188,9 +188,13 @@ export const About: React.FC = () => {
                 <p className="text-xs text-neutral-300 font-bold uppercase tracking-widest mb-6 border-b border-neutral-700 pb-4 inline-block">
                   {member.role}
                 </p>
-                <p className="text-neutral-500 leading-relaxed group-hover:text-neutral-300 transition-colors">
+                {/* <p className="text-neutral-500 leading-relaxed group-hover:text-neutral-300 transition-colors">
                   {member.description}
-                </p>
+                </p> */}
+                <p
+                  className="text-neutral-500 leading-relaxed group-hover:text-neutral-300 transition-colors"
+                  dangerouslySetInnerHTML={{ __html: member.description }}
+                />
               </div>
             ))}
           </div>
